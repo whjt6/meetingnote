@@ -1,32 +1,58 @@
-body {
-    font-family: Arial, sans-serif;
+/* style.css */
+
+/* Reset margin dan padding untuk semua elemen */
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-form {
-    margin-bottom: 20px;
+/* Gaya untuk header */
+h1 {
+    text-align: center;
+    margin: 20px 0;
 }
 
-input[type="text"], input[type="password"], textarea {
+/* Gaya untuk formulir */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk input */
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"],
+textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
+/* Gaya untuk tombol */
 button {
-    padding: 10px 15px;
-    background-color: #28a745;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #4cae4c;
 }
