@@ -31,5 +31,5 @@ Sebelum Anda memulai, pastikan Anda telah menginstal:
    - Clone repositori ini atau unduh sebagai ZIP dan ekstrak.
 
    ```bash
-   git clone <https://github.com/whjt6/meetingnote.git>
+   git clone https://github.com/whjt6/meetingnote.git
    
