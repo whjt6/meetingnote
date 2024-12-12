@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $dbname = 'meetingnote'; // Ganti dengan notemeeting
-$username = 'root'; // Sesuaikan jika menggunakan username lain
-$password = ''; // Sesuaikan jika ada password
+$username = 'meeting_note'; // Sesuaikan jika menggunakan username lain
+$password = 'makanbang5'; // Sesuaikan jika ada password
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
