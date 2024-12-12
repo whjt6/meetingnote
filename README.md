@@ -1,4 +1,4 @@
-# Notemeeting
+# Meeting Note
 
 Notemeeting adalah aplikasi web sederhana yang memungkinkan pengguna untuk membuat dan mengelola catatan sementara. Pengguna dapat membuat catatan yang akan dihapus setelah dibaca, memberikan kemudahan dalam berbagi informasi secara temporer.
 
