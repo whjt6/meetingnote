@@ -1,4 +1,6 @@
-<?php include 'db.php'; session_start(); 
+<?php
+include 'db.php'; 
+session_start(); 
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -25,11 +27,13 @@ if (!isset($_SESSION['user_id'])) {
         $note = $_POST['note'];
         $user_id = $_SESSION['user_id'];
 
-        $stmt = $pdo->prepare("INSERT INTO notes (user_id, note) VALUES (?, ?)");
-        $stmt->execute([$user_id, $note]);
-        echo "Note created successfully.";
+        $stmt = $pdo->prepare("INSERT INTO notes (note, user_id) VALUES (?, ?)");
+        if ($stmt->execute([$note, $user_id])) {
+            echo "Note created successfully.";
+        } else {
+            echo "Error creating note.";
+        }
     }
     ?>
-    <p><a href="view_note.php">View Your Notes</a></p>
 </body>
 </html>
