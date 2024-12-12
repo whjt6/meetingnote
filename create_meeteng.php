@@ -29,8 +29,8 @@ if (!isset($_SESSION['user_id'])) {
         $meeting_date = $_POST['meeting_date'];
         $user_id = $_SESSION['user_id'];
 
-        $stmt = $pdo->prepare("INSERT INTO meetings (title, description, meeting_date) VALUES (?, ?, ?)");
-        $stmt->execute([$title, $description, $meeting_date]);
+        $stmt = $pdo->prepare("INSERT INTO meetings (title, description, meeting_date, user_id) VALUES (?, ?, ?, ?)");
+        $stmt->execute([$title, $description, $meeting_date, $user_id]);
         echo "Meeting created successfully.";
     }
     ?>
