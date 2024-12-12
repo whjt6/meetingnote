@@ -20,6 +20,7 @@
         $username = $_POST['username'];
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
+        // Menyimpan data ke database
         $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
         if ($stmt->execute([$username, $password])) {
             echo "User registered successfully! You can now <a href='login.php'>login</a>.";
